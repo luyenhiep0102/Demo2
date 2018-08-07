@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d7f7ff"
+    android:orientation="vertical"
+
+    tools:context=".MainActivity">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_header_bg" />
+        <LinearLayout
+            android:layout_gravity="bottom"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="130dp">
+
+            <LinearLayout
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="7">
+                <ImageView
+
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_weight="5"
+                    android:textColor="#ffffff"
+                    android:text="Nutrition"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_weight="1"
+                    android:text="Day 1/7"
+                    android:gravity="center"
+                    android:textColor="#ffffff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_gravity="bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <HorizontalScrollView
+                    android:scrollbars="none"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <LinearLayout
+                            android:id="@+id/lnDay1"
+                            android:layout_marginLeft="10dp"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:background="@drawable/custom_button_shadow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <View
+                                android:id="@+id/vDay1"
+                                android:layout_gravity="right"
+                                android:layout_marginRight="10dp"
+                                android:background="#ff0000"
+                                android:layout_width="3dp"
+                                android:layout_height="3dp"/>
+                            <TextView
+                                android:text="Day 1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/lnDay2"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:background="@drawable/drawable_box"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <View
+                                android:id="@+id/vDay2"
+                                android:layout_gravity="right"
+                                android:layout_marginRight="10dp"
+                                android:background="#ff0000"
+                                android:visibility="invisible"
+                                android:layout_width="3dp"
+                                android:layout_height="3dp"/>
+                            <TextView
+                                android:text="Day 2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/lnDay3"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:background="@drawable/drawable_box"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <View
+                                android:id="@+id/vDay3"
+                                android:layout_gravity="right"
+                                android:layout_marginRight="10dp"
+                                android:background="#ff0000"
+                                android:visibility="invisible"
+                                android:layout_width="3dp"
+                                android:layout_height="3dp"/>
+                            <TextView
+                                android:text="Day 3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/lnDay4"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:background="@drawable/drawable_box"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <View
+                                android:id="@+id/vDay4"
+                                android:layout_gravity="right"
+                                android:layout_marginRight="10dp"
+                                android:background="#ff0000"
+                                android:visibility="invisible"
+                                android:layout_width="3dp"
+                                android:layout_height="3dp"/>
+                            <TextView
+                                android:text="Day 4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/lnDay5"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:background="@drawable/drawable_box"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <View
+                                android:id="@+id/vDay5"
+                                android:layout_gravity="right"
+                                android:layout_marginRight="10dp"
+                                android:background="#ff0000"
+                                android:visibility="invisible"
+                                android:layout_width="3dp"
+                                android:layout_height="3dp"/>
+                            <TextView
+                                android:text="Day 5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/lnDay6"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:background="@drawable/drawable_box"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <View
+                                android:id="@+id/vDay6"
+                                android:layout_gravity="right"
+                                android:layout_marginRight="10dp"
+                                android:background="#ff0000"
+                                android:visibility="invisible"
+                                android:layout_width="3dp"
+                                android:layout_height="3dp"/>
+                            <TextView
+                                android:text="Day 6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/lnDay7"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:background="@drawable/drawable_box"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <View
+                                android:id="@+id/vDay7"
+                                android:layout_gravity="right"
+                                android:layout_marginRight="10dp"
+                                android:background="#ff0000"
+                                android:visibility="invisible"
+                                android:layout_width="3dp"
+                                android:layout_height="3dp"/>
+                            <TextView
+                                android:text="Day 7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_weight="8"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp"
+            android:layout_weight="7"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+        </android.support.v4.view.ViewPager>
+        <android.support.design.widget.TabLayout
+
+            android:id="@+id/tabList"
+            app:tabMode="fixed"
+            app:tabSelectedTextColor="#0095ff"
+            app:tabTextColor="#000000"
+            android:background="#ffffff"
+            app:tabTextAppearance="@style/MyTabLayoutTextAppearance"
+            app:tabIndicatorColor="#0095ff"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </android.support.design.widget.TabLayout>
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
